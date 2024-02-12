@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+:root{
+    --second_font: 'Montserrat', sans-serif;
+    --main_font: 'Nunito', sans-serif;
+    --white: #F8F6F0;
+    --black: #1c1c1c;
+    --font_size_bigger:7.5rem;
+    --font_size_big:5rem;
+    --font_size_medium:3rem;
+    --font_size_small:2rem;
+    --font_size_smaller:1rem;
+}
+h1{
+    font-size: var(--font_size_bigger);
+    font-family: var(--main_font);
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+h2{
+    font-size: var(--font_size_big);
+    font-family: var(--main_font);
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+h3{
+    font-size: var(--font_size_medium);
+    font-family: var(--main_font);
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+h4{
+    font-size: 2rem;
+    font-family: var(--main_font);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+a,ul,li{
+    text-decoration: none;
+    list-style: none;
+}
+main{
+    width: 100%;
+    margin-top: 10rem;
+    text-align: center;
+
+}
+.navbar_new{
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.navbar_new a{
+    font-size: var(--font_size_small);
+    font-family: var(--main_font);
+    color: var(--black);
+    margin: 3rem 2rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+.navbar_new a:hover{
+    text-decoration: underline;
+}
+
+
+
+.libro {
+    margin: 5rem;
+    padding: 3rem 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .libro img {
+    width: 40rem;
+    height: 40rem;
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  .libro p {
+    font-family: var(--main_font);
+    color: var(--black);
+    font-size: var(--font_size_medium);
+  }
+  

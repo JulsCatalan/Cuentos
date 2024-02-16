@@ -13,7 +13,13 @@
     <!-- made by Juls Catalan -->
 </head>
 <body>
-
+  <button id="cambiarColores">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-2" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M16.418 4.157a8 8 0 0 0 0 15.686" />
+  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+</svg>
+  </button>
   <header>
    <div class="general_header">
             <div class="navbar">
@@ -24,11 +30,22 @@
             </div>
         <h1>Las Batallas en el Desierto</h1>
         <h2>José Emilio Pacheco</h2>
-        <h4>Made by Juls Catalan</h3>
+        <h4>Made by Juls Catalan</h4>
    </div>
   </header>
   <main>
     <article class="main_text">
+      <div>
+        <button id="mxButton" class="main_text_button" onclick="toEspanish()">
+          <img src="./img/mx.svg" alt="mx">
+        </button>
+        <button id="usButton" class="main_text_button" onclick="toEnglish()"> 
+          <img src="./img/us.svg" alt="us">
+        </button>
+        <button id="grButton" class="main_text_button" onclick="toGerman()"> 
+          <img src="./img/de.svg" alt="gr">
+        </button>
+      </div>
         <h2>Las Batallas en el Desierto</h2>
         <p>"Las batallas en el desierto" es una novela escrita por el autor mexicano José Emilio Pacheco, publicada por primera vez en 1981. Esta obra se ha convertido en un referente de la literatura contemporánea mexicana debido a su profunda exploración de temas como la nostalgia, la pérdida, la memoria y el paso del tiempo, todo ello enmarcado en el contexto histórico y social de la Ciudad de México en la década de 1940.<br><br>
 
@@ -66,7 +83,11 @@
       <a href="./cuentos.html">Mas Cuentos</a>
       <a href="#">Contacto</a>
     </div>
+    
+    
   </footer>
+  <script src="./js/color.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/idioma.js"></script>
 </body>
 </html>

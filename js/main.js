@@ -17,3 +17,18 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 
 
+let navVisible = false;
+
+const toggleNav = () => {
+    let navbar = document.querySelector('.navbar');
+    if (navVisible) {
+        navbar.style.transform = "translateX(-100%)";
+    } else {
+        navbar.style.transform = "translateX(0)";
+    }
+    navVisible = !navVisible; // Cambiar el estado
+}
+
+
+
+
